@@ -12,6 +12,9 @@ program
   // Elm executable
   .option('-e, --path-to-elm [path-to-elm]', `An absolute or relative path to elm. If you’ve installed elm locally with npm you’ll want to set this to ${chalk.cyan.underline('node_modules/.bin/elm')}.`, 'elm')
 
+  .option('--path-to-css [path-to-css]', `An absolute or relative path to the css postprocessor`, '')
+  .option('--cssArgs [cssArgs]', `Arguments for the css postprocessor`, [])
+
   // Server
   .option('-p, --port [port]', 'The port to bind to.', Math.floor, 8000)
   .option('-h, --host [host]', 'Set the host interface to attach the server to.', 'localhost')
